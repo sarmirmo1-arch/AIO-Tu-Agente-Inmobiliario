@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>La Casa de tus Sueños · Nagua | AIO</title>
 <meta name="description" content="La Casa de tus Sueños en Nagua, República Dominicana. 4 habitaciones, 3 baños, 212 m² construidos y 268 m² de terreno.">
+<meta property="og:title" content="La Casa de tus Sueños en Nagua · AIO">
+<meta property="og:description" content="Casa en venta en Nagua, República Dominicana. 4 habitaciones, 3 baños, 212 m² construidos y 268 m² de terreno.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sarmirmo1-arch.github.io/AIO-Tu-Agente-Inmobiliario/nagua.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/sarmirmo1-arch/AIO-Tu-Agente-Inmobiliario/main/nagua-principal-coral.jpg">
+<meta property="og:image:alt" content="La Casa de tus Sueños en Nagua">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Casa de tus Sueños en Nagua · AIO">
+<meta name="twitter:description" content="Casa en venta en Nagua, República Dominicana.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sarmirmo1-arch/AIO-Tu-Agente-Inmobiliario/main/nagua-principal-coral.jpg">
 <meta name="theme-color" content="#0b4f3b">
 <style>
 :root{
@@ -122,6 +132,7 @@ footer{background:#062e21;color:#d8e7df;text-align:center;padding:30px 22px;font
     <div class="price-row">
       <div class="price">195.000 €</div>
       <div class="reference"><span data-i18n="ref">Referencia</span> · AIO-NAG-001<br><span data-i18n="sale">Casa en venta</span></div>
+      <button class="btn green" type="button" onclick="shareNagua()">↗ Compartir propiedad</button>
     </div>
   </div>
 </section>
@@ -317,6 +328,7 @@ investmentTitle:'Également pour investir',investmentText:'Si vous recherchez un
 videoTitle:'Vidéo du bien',videoNote:'La vidéo sera ajoutée ici lorsque le bon fichier de Nagua sera confirmé. Aucune vidéo n’a été ajoutée afin d’éviter de la mélanger avec le bien de Cerros de la Bahía.',footer:'Acheter · Vendre · Investir'
 }};
 let currentLang='es';
+async function shareNagua(){const url='https://sarmirmo1-arch.github.io/AIO-Tu-Agente-Inmobiliario/nagua.html';const data={title:'La Casa de tus Sueños · Nagua',text:'Mira esta propiedad de AIO en Nagua, República Dominicana.',url};try{if(navigator.share){await navigator.share(data)}else if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(url);alert('Enlace copiado. Ya puedes pegarlo en WhatsApp, Instagram o Facebook.')}else{window.prompt('Copia este enlace para compartir la propiedad:',url)}}catch(e){if(e.name!=='AbortError'){window.prompt('Copia este enlace para compartir la propiedad:',url)}}}
 function setLang(lang){
   currentLang=lang;
   document.documentElement.lang=lang;
